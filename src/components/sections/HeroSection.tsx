@@ -45,6 +45,10 @@ export default function HeroSection() {
           loop 
           muted 
           playsInline
+          onEnded={(e) => {
+            const video = e.target as HTMLVideoElement;
+            video.play().catch(console.error);
+          }}
           className="absolute inset-0 w-full h-full object-cover -z-20"
         >
           <source src="/video.mp4" type="video/mp4" />
