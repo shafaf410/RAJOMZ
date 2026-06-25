@@ -9,7 +9,7 @@ export default function HeroSection() {
         {/* Left Side: Content */}
         <div className="max-w-xl">
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-[1.15] tracking-tight mb-8 text-foreground">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-[1.15] tracking-tight mb-8 text-white">
             Connecting Global Trade Through <br /> <span className="text-accent">Intelligent Logistics</span>
           </h1>
           
@@ -29,8 +29,24 @@ export default function HeroSection() {
         
       </div>
       
-      {/* Background Elements */}
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-gray-100/50 to-transparent pointer-events-none -z-10" />
+      {/* Background Video */}
+      <div 
+        className="absolute inset-0 w-full h-full -z-20"
+        dangerouslySetInnerHTML={{
+          __html: `
+            <video 
+              autoplay 
+              loop 
+              muted 
+              playsinline
+              preload="auto"
+              style="width: 100%; height: 100%; object-fit: cover;"
+            >
+              <source src="https://res.cloudinary.com/dapksjmal/video/upload/v1782406692/VN20260625_220213_xxacde.mp4" type="video/mp4" />
+            </video>
+          `
+        }}
+      />
     </section>
   );
 }
