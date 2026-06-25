@@ -9,6 +9,8 @@ export default function HeroSection() {
 
   useEffect(() => {
     if (videoRef.current) {
+      videoRef.current.muted = true;
+      videoRef.current.defaultMuted = true;
       videoRef.current.play().catch(error => {
         console.error("Video autoplay failed:", error);
       });
