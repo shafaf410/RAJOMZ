@@ -59,7 +59,7 @@ export default function HeroSection() {
               preload="auto"
               style="width: 100%; height: 100%; object-fit: cover;"
             >
-              <source src="https://res.cloudinary.com/dapksjmal/video/upload/w_1280,q_auto,f_auto/v1782406692/VN20260625_220213_xxacde.mp4" type="video/mp4" />
+              <source src="/video.mp4" type="video/mp4" />
             </video>
           `
         }}
