@@ -2,20 +2,13 @@
 
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { useEffect, useRef } from "react";
+import { useEffect, useState } from "react";
 
 export default function HeroSection() {
-  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    const video = document.getElementById("hero-video") as HTMLVideoElement;
-    if (video) {
-      video.muted = true;
-      video.defaultMuted = true;
-      video.play().catch(error => {
-        console.error("Video autoplay failed:", error);
-      });
-    }
+    setIsMounted(true);
   }, []);
 
   return (
@@ -46,24 +39,17 @@ export default function HeroSection() {
       </div>
       
       {/* Background Video */}
-      <div 
-        className="absolute inset-0 w-full h-full -z-20"
-        dangerouslySetInnerHTML={{
-          __html: `
-            <video 
-              id="hero-video"
-              autoplay 
-              loop 
-              muted 
-              playsinline
-              preload="auto"
-              style="width: 100%; height: 100%; object-fit: cover;"
-            >
-              <source src="/video.mp4" type="video/mp4" />
-            </video>
-          `
-        }}
-      />
+      {isMounted && (
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover -z-20"
+        >
+          <source src="/video.mp4" type="video/mp4" />
+        </video>
+      )}
     </section>
   );
 }
