@@ -8,17 +8,18 @@ export default function HeroSection() {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.muted = true;
-      videoRef.current.defaultMuted = true;
-      videoRef.current.play().catch(error => {
+    const video = document.getElementById("hero-video") as HTMLVideoElement;
+    if (video) {
+      video.muted = true;
+      video.defaultMuted = true;
+      video.play().catch(error => {
         console.error("Video autoplay failed:", error);
       });
     }
   }, []);
 
   return (
-    <section className="relative h-screen pt-24 pb-10 flex items-center overflow-hidden">
+    <section className="relative h-screen pt-24 pb-10 flex items-center overflow-hidden bg-carbon">
       <div className="container mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 items-center relative z-10">
         
         {/* Left Side: Content */}
@@ -45,17 +46,24 @@ export default function HeroSection() {
       </div>
       
       {/* Background Video */}
-      <video 
-        ref={videoRef}
-        autoPlay 
-        loop 
-        muted 
-        playsInline
-        preload="auto"
-        className="absolute inset-0 w-full h-full object-cover -z-20"
-      >
-        <source src="https://res.cloudinary.com/dapksjmal/video/upload/v1782406692/VN20260625_220213_xxacde.mp4" type="video/mp4" />
-      </video>
+      <div 
+        className="absolute inset-0 w-full h-full -z-20"
+        dangerouslySetInnerHTML={{
+          __html: `
+            <video 
+              id="hero-video"
+              autoplay 
+              loop 
+              muted 
+              playsinline
+              preload="auto"
+              style="width: 100%; height: 100%; object-fit: cover;"
+            >
+              <source src="https://res.cloudinary.com/dapksjmal/video/upload/v1782406692/VN20260625_220213_xxacde.mp4" type="video/mp4" />
+            </video>
+          `
+        }}
+      />
     </section>
   );
 }
