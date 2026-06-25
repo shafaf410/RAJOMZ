@@ -12,7 +12,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative h-screen pt-24 pb-10 flex items-center overflow-hidden bg-carbon">
+    <section className="relative h-screen pt-24 pb-10 flex items-center overflow-hidden">
       <div className="container mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 items-center relative z-10">
         
         {/* Left Side: Content */}
