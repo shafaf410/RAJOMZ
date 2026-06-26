@@ -68,13 +68,10 @@ export default function IndustriesSection() {
                   style={{ backgroundImage: `url(${industry.image})` }}
                 />
                 
-                {/* Dark Overlay - Now lighter so images are always visible */}
-                <div className="absolute inset-0 bg-gradient-to-t from-carbon/90 via-carbon/40 to-carbon/30 group-hover:via-carbon/30 transition-colors duration-300 z-0" />
-                
                 {/* Content */}
-                <div className="relative z-10 p-6 flex flex-col items-center justify-end w-full h-full pb-8">
-                  <Icon size={36} strokeWidth={1.5} className="text-white mb-4 transition-transform duration-300 group-hover:-translate-y-1" />
-                  <h3 className="font-semibold text-white transition-colors duration-300 text-lg">
+                <div className="relative z-10 p-6 flex flex-col items-center justify-end w-full h-full pb-8 drop-shadow-md">
+                  <Icon size={36} strokeWidth={1.5} className="text-white mb-4 transition-transform duration-300 group-hover:-translate-y-1 drop-shadow-lg" />
+                  <h3 className="font-semibold text-white transition-colors duration-300 text-lg drop-shadow-lg">
                     {industry.name}
                   </h3>
                 </div>
