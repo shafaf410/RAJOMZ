@@ -150,33 +150,6 @@ export default function ServiceDetailsOverlay({ service, onClose }: ServiceDetai
           </div>
         </div>
 
-        {/* Horizontal Image Gallery */}
-        <motion.div 
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="w-full pb-24 overflow-hidden"
-        >
-          <div className="container mx-auto px-6 lg:px-12 mb-8">
-            <h3 className="text-3xl font-bold text-carbon font-display">Logistics in Action</h3>
-          </div>
-          
-          <div className="flex overflow-x-auto gap-6 px-6 lg:px-12 pb-8 no-scrollbar snap-x">
-            {service.gallery.map((img, idx) => (
-              <motion.div 
-                key={idx}
-                whileHover={{ y: -10 }}
-                className="relative flex-none w-[280px] h-[350px] sm:w-[350px] sm:h-[450px] rounded-2xl overflow-hidden shadow-xl snap-center"
-              >
-                <div 
-                  className="absolute inset-0 bg-cover bg-center hover:scale-110 transition-transform duration-700"
-                  style={{ backgroundImage: `url(${img})` }}
-                />
-                <div className="absolute inset-0 bg-black/10 hover:bg-transparent transition-colors duration-300" />
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
         
         {/* Footer CTA inside overlay */}
         <div className="container mx-auto px-6 lg:px-12 text-center pb-12">
