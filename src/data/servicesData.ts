@@ -190,7 +190,7 @@ export const servicesData: ServiceType[] = [
       "Rajomz supports businesses by coordinating supply chain activities through trusted logistics partners and efficient operational planning. Our objective is to streamline movement, reduce delays, improve visibility, and strengthen overall logistics performance."
     ],
     icon: Warehouse,
-    heroImage: "https://images.unsplash.com/photo-1586528116311-ad8ed7c1562b?q=80&w=2000&auto=format&fit=crop", // Modern warehouse
+    heroImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2000&auto=format&fit=crop", // Modern warehouse
     keyFeaturesTitle: "Capabilities",
     keyFeatures: [
       "Inventory coordination",
