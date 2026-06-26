@@ -14,7 +14,7 @@ const features = [
 
 export default function WhyChooseUsSection() {
   return (
-    <section className="py-24 bg-surface">
+    <section id="about" className="py-24 bg-surface">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="text-center max-w-4xl mx-auto mb-16">
           <motion.h2 

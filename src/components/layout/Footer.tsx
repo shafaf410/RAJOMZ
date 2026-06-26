@@ -24,21 +24,21 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-gray-200">Services</h3>
             <ul className="space-y-3 text-sm text-gray-400">
-              <li><Link href="#" className="hover:text-accent transition-colors">Air Freight</Link></li>
-              <li><Link href="#" className="hover:text-accent transition-colors">Ocean Freight</Link></li>
-              <li><Link href="#" className="hover:text-accent transition-colors">Road Transportation</Link></li>
-              <li><Link href="#" className="hover:text-accent transition-colors">Customs Clearance</Link></li>
-              <li><Link href="#" className="hover:text-accent transition-colors">Warehousing</Link></li>
+              <li><Link href="#services" className="hover:text-accent transition-colors">Air Freight</Link></li>
+              <li><Link href="#services" className="hover:text-accent transition-colors">Ocean Freight</Link></li>
+              <li><Link href="#services" className="hover:text-accent transition-colors">Road Transportation</Link></li>
+              <li><Link href="#services" className="hover:text-accent transition-colors">Customs Clearance</Link></li>
+              <li><Link href="#services" className="hover:text-accent transition-colors">Warehousing</Link></li>
             </ul>
           </div>
 
           <div>
             <h3 className="text-lg font-semibold mb-4 text-gray-200">Company</h3>
             <ul className="space-y-3 text-sm text-gray-400">
-              <li><Link href="#" className="hover:text-accent transition-colors">About Us</Link></li>
-              <li><Link href="#" className="hover:text-accent transition-colors">Industries</Link></li>
-              <li><Link href="#" className="hover:text-accent transition-colors">Careers</Link></li>
-              <li><Link href="#" className="hover:text-accent transition-colors">Contact</Link></li>
+              <li><Link href="#about" className="hover:text-accent transition-colors">About Us</Link></li>
+              <li><Link href="#industries" className="hover:text-accent transition-colors">Industries</Link></li>
+              <li><Link href="#contact" className="hover:text-accent transition-colors">Careers</Link></li>
+              <li><Link href="#contact" className="hover:text-accent transition-colors">Contact</Link></li>
             </ul>
           </div>
 
