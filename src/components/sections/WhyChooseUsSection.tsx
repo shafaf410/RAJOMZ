@@ -1,30 +1,39 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Globe, Eye, Headphones, ShieldCheck, Lock, Cpu } from "lucide-react";
+import { Globe, Users, Headphones, Handshake, Briefcase, TrendingUp } from "lucide-react";
 
 const features = [
-  { title: "Global Reach", description: "Expansive network connecting over 50 countries with seamless integration.", icon: Globe },
-  { title: "Real-Time Visibility", description: "Advanced tracking systems for end-to-end cargo monitoring.", icon: Eye },
-  { title: "Dedicated Support", description: "24/7 expert logistics support to handle complex supply chain challenges.", icon: Headphones },
-  { title: "Customs Expertise", description: "In-house brokerage ensuring compliance and avoiding delays.", icon: ShieldCheck },
-  { title: "Secure Handling", description: "Stringent security protocols for high-value and sensitive cargo.", icon: Lock },
-  { title: "Technology-Driven", description: "AI-powered routing and analytics for optimized freight operations.", icon: Cpu },
+  { title: "Strong Network", description: "Established regional and international business network driving seamless operations.", icon: Globe },
+  { title: "Bulk Shipment Access", description: "Direct access to bulk shipment opportunities enabling cost-effective global trade.", icon: Briefcase },
+  { title: "Customer-Focused", description: "Dedicated service approach prioritizing your unique supply chain requirements.", icon: Headphones },
+  { title: "Strategic Partnerships", description: "Deep commitment to long-term, sustainable B2B logistics partnerships.", icon: Handshake },
+  { title: "Global Expansion", description: "Active expansion plans focusing on key international markets like the UK and Europe.", icon: TrendingUp },
+  { title: "Agile & Scalable", description: "A rapidly growing customer base with scalable logistics solutions.", icon: Users },
 ];
 
 export default function WhyChooseUsSection() {
   return (
     <section className="py-24 bg-surface">
       <div className="container mx-auto px-6 lg:px-12">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-4xl mx-auto mb-16">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6"
           >
-            Why Industry Leaders Choose Rajomz
+            Why Choose Rajomz Global Ventures
           </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="text-gray-600 text-lg leading-relaxed"
+          >
+            Rajomz Global Ventures Pvt. Ltd. is a newly established company focused on international logistics, courier partnerships, freight solutions, and global trade facilitation. While we are a young company, we are backed by strong industry connections, reliable business networks, and a growing customer base across India and overseas markets.
+          </motion.p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

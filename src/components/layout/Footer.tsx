@@ -46,8 +46,8 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4 text-gray-200">Contact</h3>
             <ul className="space-y-3 text-sm text-gray-400">
               <li>info@rajomzglobal.com</li>
-              <li>+1 (555) 123-4567</li>
-              <li>123 Logistics Way, Suite 400<br/>New York, NY 10001</li>
+              <li>IN: +91 7736350626</li>
+              <li>UK: +44 7349723209</li>
             </ul>
           </div>
         </div>

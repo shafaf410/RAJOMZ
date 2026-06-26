@@ -1,44 +1,44 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Plane, Ship, Truck, FileCheck, Warehouse, Network } from "lucide-react";
+import { Plane, Ship, Truck, FileCheck, Warehouse, Network, Globe } from "lucide-react";
 import Link from "next/link";
 
 const services = [
   {
-    title: "Air Freight",
-    description: "Fast international air cargo solutions with global carrier partnerships.",
+    title: "International Courier Services",
+    description: "Fast and reliable international courier services through strategic partnerships.",
     icon: Plane,
     image: "https://images.unsplash.com/photo-1542296332-2e4473faf563?q=80&w=800&auto=format&fit=crop",
   },
   {
-    title: "Ocean Freight",
-    description: "Reliable FCL and LCL shipping across major trade routes.",
+    title: "Freight & Logistics",
+    description: "Comprehensive freight solutions tailored for your evolving business needs.",
     icon: Ship,
     image: "https://images.unsplash.com/photo-1494412519320-aa613dfb7738?q=80&w=800&auto=format&fit=crop",
   },
   {
-    title: "Road Transportation",
-    description: "Efficient domestic and cross-border cargo transportation.",
-    icon: Truck,
+    title: "Import & Export Support",
+    description: "Expert assistance and processing for seamless global trade operations.",
+    icon: FileCheck,
     image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=800&auto=format&fit=crop",
   },
   {
-    title: "Customs Clearance",
-    description: "Fast and compliant customs processing worldwide.",
-    icon: FileCheck,
+    title: "B2B Partnerships",
+    description: "Strategic Business-to-Business logistics and supply chain collaborations.",
+    icon: Network,
     image: "https://images.unsplash.com/photo-1554774853-719586f82d77?q=80&w=800&auto=format&fit=crop",
   },
   {
-    title: "Warehousing",
-    description: "Secure inventory storage and distribution centers.",
-    icon: Warehouse,
+    title: "India-UK & Europe Routes",
+    description: "Specialized trade routes connecting India with the UK and European markets.",
+    icon: Globe,
     image: "https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=800&auto=format&fit=crop",
   },
   {
-    title: "Supply Chain Solutions",
-    description: "End-to-end logistics planning and management.",
-    icon: Network,
+    title: "Supply Chain Coordination",
+    description: "End-to-end management and coordination of global supply chains.",
+    icon: Warehouse,
     image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800&auto=format&fit=crop",
   },
 ];

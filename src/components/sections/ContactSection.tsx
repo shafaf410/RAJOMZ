@@ -45,6 +45,14 @@ export default function ContactSection() {
                   </div>
                 </div>
               </div>
+              
+              <div className="mt-8 pt-8 border-t border-gray-200">
+                <h4 className="font-bold text-foreground text-lg mb-2">Prefer to call?</h4>
+                <div className="flex flex-col gap-2">
+                  <p className="text-gray-600 font-medium">India: <a href="tel:+917736350626" className="text-accent hover:underline">+91 7736350626</a></p>
+                  <p className="text-gray-600 font-medium">UK: <a href="tel:+447349723209" className="text-accent hover:underline">+44 7349723209</a></p>
+                </div>
+              </div>
             </motion.div>
           </div>
 
