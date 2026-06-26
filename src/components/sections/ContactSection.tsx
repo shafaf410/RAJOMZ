@@ -65,54 +65,19 @@ export default function ContactSection() {
           >
             <form 
               suppressHydrationWarning 
-              className="space-y-4" 
+              className="flex flex-col items-center justify-center h-full min-h-[250px]" 
               onSubmit={(e) => {
                 e.preventDefault();
                 window.open("https://mail.google.com/mail/?view=cm&fs=1&to=rajomzgroups@gmail.com", "_blank");
               }}
             >
-              <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-1">
-                  <label className="text-xs font-semibold text-gray-700">First Name</label>
-                  <input type="text" className="w-full px-3 py-2 text-sm bg-gray-50 border border-gray-200 rounded-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all" />
-                </div>
-                <div className="space-y-1">
-                  <label className="text-xs font-semibold text-gray-700">Last Name</label>
-                  <input type="text" className="w-full px-3 py-2 text-sm bg-gray-50 border border-gray-200 rounded-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all" />
-                </div>
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-bold text-carbon font-display mb-2">Get in Touch</h3>
+                <p className="text-gray-500">Reach out directly to our team for a custom quote and strategy.</p>
               </div>
-              
-              <div className="space-y-1">
-                <label className="text-xs font-semibold text-gray-700">Company Name</label>
-                <input type="text" className="w-full px-3 py-2 text-sm bg-gray-50 border border-gray-200 rounded-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all" />
-              </div>
-              
-              <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-1">
-                  <label className="text-xs font-semibold text-gray-700">Work Email</label>
-                  <input type="email" className="w-full px-3 py-2 text-sm bg-gray-50 border border-gray-200 rounded-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all" />
-                </div>
-                <div className="space-y-1">
-                  <label className="text-xs font-semibold text-gray-700">Phone Number</label>
-                  <input type="tel" className="w-full px-3 py-2 text-sm bg-gray-50 border border-gray-200 rounded-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all" />
-                </div>
-              </div>
-              
-              <div className="space-y-1">
-                <label className="text-xs font-semibold text-gray-700">Service Required</label>
-                <select className="w-full px-3 py-2 text-sm bg-gray-50 border border-gray-200 rounded-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all">
-                  <option>Air Freight</option>
-                  <option>Ocean Freight</option>
-                  <option>Road Transportation</option>
-                  <option>Customs Clearance</option>
-                  <option>Warehousing & Distribution</option>
-                  <option>Supply Chain Consulting</option>
-                </select>
-              </div>
-              
-              <button className="w-full py-3 mt-2 bg-accent text-white font-bold text-sm rounded-sm hover:bg-accent/90 transition-all flex items-center justify-center gap-2 group">
+              <button className="w-full py-4 bg-accent text-white font-bold text-lg rounded-sm hover:bg-accent/90 transition-all flex items-center justify-center gap-2 group shadow-xl shadow-accent/20">
                 Request Logistics Consultation
-                <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
               </button>
             </form>
           </motion.div>
