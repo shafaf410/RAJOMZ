@@ -16,7 +16,7 @@ const industries = [
 
 export default function IndustriesSection() {
   return (
-    <section id="industries" className="py-24 bg-carbon text-white relative">
+    <section id="industries" className="py-24 bg-[#0a0a0a] text-white relative">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
           <div className="max-w-2xl">
