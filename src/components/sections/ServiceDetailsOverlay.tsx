@@ -39,13 +39,13 @@ export default function ServiceDetailsOverlay({ service, onClose }: ServiceDetai
           <ArrowLeft size={20} />
           <span className="font-medium">Back</span>
         </button>
-        <Link
+        <a
           href="mailto:rajomzgroups@gmail.com"
           onClick={onClose}
           className="pointer-events-auto flex items-center gap-2 px-6 py-2.5 bg-accent text-white font-semibold rounded-full hover:bg-accent/90 transition-all shadow-[0_0_20px_rgba(180,138,58,0.4)]"
         >
           Request Quote
-        </Link>
+        </a>
       </div>
 
       {/* Hero Section */}
@@ -154,14 +154,14 @@ export default function ServiceDetailsOverlay({ service, onClose }: ServiceDetai
         {/* Footer CTA inside overlay */}
         <div className="container mx-auto px-6 lg:px-12 text-center pb-12">
            <h2 className="text-3xl md:text-4xl font-display font-bold text-carbon mb-6">Ready to streamline your logistics?</h2>
-           <Link 
+           <a 
               href="mailto:rajomzgroups@gmail.com"
               onClick={onClose}
               className="inline-flex items-center justify-center gap-2 px-10 py-4 bg-carbon text-white font-semibold rounded-sm hover:bg-accent transition-colors text-lg"
             >
               Get Started Now
               <ArrowRight size={20} />
-            </Link>
+            </a>
         </div>
       </div>
     </motion.div>

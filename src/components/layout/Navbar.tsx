@@ -58,12 +58,12 @@ export default function Navbar() {
 
         {/* Desktop CTA */}
         <div className="hidden lg:flex items-center space-x-6">
-          <Link
+          <a
             href="mailto:rajomzgroups@gmail.com"
             className="px-6 py-2.5 bg-accent text-white text-sm font-medium rounded-sm hover:bg-accent/90 transition-colors"
           >
             Request Quote
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Toggle */}
@@ -89,13 +89,13 @@ export default function Navbar() {
             </Link>
           ))}
           <div className="border-t border-gray-200 my-2 pt-4 flex flex-col space-y-4">
-            <Link
+            <a
               href="mailto:rajomzgroups@gmail.com"
               className="px-6 py-3 bg-accent text-white text-center font-medium rounded-sm hover:bg-accent/90 transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Request Quote
-            </Link>
+            </a>
           </div>
         </div>
       )}

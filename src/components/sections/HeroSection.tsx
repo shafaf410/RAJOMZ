@@ -23,13 +23,13 @@ export default function HeroSection() {
           </h1>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link 
+            <a 
               href="mailto:rajomzgroups@gmail.com"
               className="flex items-center justify-center gap-2 px-8 py-4 bg-accent text-white font-semibold rounded-sm hover:bg-accent/90 transition-all group"
             >
               Request a Quote
               <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-            </Link>
+            </a>
           </div>
         </div>
 
