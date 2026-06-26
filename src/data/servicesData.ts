@@ -24,7 +24,7 @@ export const servicesData: ServiceType[] = [
       "Whether it is commercial shipments, documents, samples, or business consignments, our services are designed to provide transparency, reliability, and peace of mind."
     ],
     icon: Plane,
-    heroImage: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2000&auto=format&fit=crop", // Cargo aircraft
+    heroImage: "https://images.unsplash.com/photo-1542296332-2e4473faf563?q=80&w=2000&auto=format&fit=crop", // Cargo aircraft
     keyFeaturesTitle: "Key Features",
     keyFeatures: [
       "Worldwide courier network",

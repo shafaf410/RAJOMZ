@@ -27,6 +27,7 @@ export default function ServiceDetailsOverlay({ service, onClose }: ServiceDetai
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
+      data-lenis-prevent="true"
       className="fixed inset-0 z-50 bg-white overflow-y-auto overflow-x-hidden no-scrollbar"
     >
       {/* Sticky Header Actions */}
