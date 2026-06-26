@@ -18,7 +18,7 @@ export default function HeroSection() {
         {/* Left Side: Content */}
         <div className="max-w-xl">
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-[1.15] tracking-tight mb-8 text-white ">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-[1.15] tracking-tight mb-8 text-white">
             Connecting Global Trade Through <br /> <span className="text-accent">Intelligent Logistics</span>
           </h1>
           
